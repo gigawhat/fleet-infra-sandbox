@@ -5,3 +5,8 @@ namespace: argocd
 resources:
   - namespace.yaml
   - github.com/argoproj/argo-cd//manifests/core-install?ref=v2.9.6
+  - configmap-cmp-plugin.yaml
+  - secret-avp-age.yaml
+
+patches:
+  - path: deployment-argocd-repo-server.yaml
