@@ -3,4 +3,4 @@ kind: Secret
 metadata:
     name: demo
 stringData:
-    hello: <path:secrets.yaml.enc#test-secret>
+    hello: <path:../../secrets/apps/demo/secrets.yaml.enc#test-secret>
